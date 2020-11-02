@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>替换全部</title>
+</head>
+<body>
+            <script>
+                String.prototype.replaceAll=function(s1,s2){
+                    return this.replace(new RegExp(s1,"gm"),s2)
+                }
+            </script>
+</body>
+</html>

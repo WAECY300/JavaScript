@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数</title>
+</head>
+<body>
+
+<script>
+
+    //有名函数
+    function f() {
+        console.log('普通的函数');
+    }
+
+    let a = 9;
+    //匿名函数
+    let T = '执行了匿名函数O_o';
+    (function(T){
+        if (a > -1 && a<8){
+            console.log('答案显而易见。。。');
+        }
+        else {
+            console.log('答案是错误的...');
+        }
+    })
+
+    ('T');//执行匿名函数
+    f();//执行有名函数
+
+</script>
+</body>
+</html>

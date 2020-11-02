@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>清除空格</title>
+</head>
+<body>
+
+        <script>
+            String.prototype.trim=function(){
+                var reExtraSpace = /^\s*(.*?)\s+$/;
+                return this.replace(reExtraSpace,"$1")
+            }
+        </script>
+</body>
+</html>

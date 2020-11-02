@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>图形打印</title>
+</head>
+<body>
+</body>
+</html>
+
+<script>
+    // 5*5
+    for (let a=0;a<5;a++){
+
+        for (let b=0;b<=a;b++){
+            document.write("。");
+        }
+        document.write("<br/>");
+    }
+    document.write('<hr color="black"/>');
+
+    // 5*5 倒
+    for(let c=0;c<5;c++){
+        for (let d=0;d<c;d++){
+            document.write("。");
+        }
+    }
+    document.write('<hr color="red"/>');
+
+    //    4*7
+    for (let e=1;e<=4;e++){
+        for (let f=0;f<=7;f+=2){
+            document.write("。");
+        }
+        document.write('<br/>');
+    }
+    document.write('<hr color="black"/>');
+
+    //   4*7  倒
+    for(let g=0;g<=7;g++){
+        for (let h=0;h>=g;h-=2){
+            document.write("。");
+        }
+        document.write("<br/>");
+    }
+    document.write('<hr color="black"/>');
+
+</script>

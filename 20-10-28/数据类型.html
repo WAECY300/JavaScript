@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据类型</title>
+</head>
+<style>
+    body
+    {
+        background-color:#555;
+    }
+    div{
+        height:900px;
+        width: 900px;
+        background-color:grey;
+    }
+</style>
+<body>
+
+            <script>
+                window.alert("早上好！！！");
+                confirm("Get到了吗？");
+                prompt("请随便输入几个数值:_______");
+                window.alert("OK~~~");
+                document.write(Date());
+                // document.getElementById('cc').innerHTML="盒子里能看到我。。。";
+                //String 字符串
+                let str = "这是字符串";
+                //Number 数字类型的数据
+                //Array  数组:['奶类饮品'，饮料，食物]
+                //object 对象:针对人或事物的一些常规状态的集合;例如:姓名，性别，年龄，身高，体重
+                //function 方法:做一个功能，或者需要执行某些事件的流程集合
+                //null   空类型：当前变量没有指向任何值，后续会有指向，一般在清除数据值的时候会经常使用
+                //undefined  没有值的变量
+                //boolean  布尔值（真true假false）
+
+                let num = 2333;
+                let  arr = [1,2,3,5,6,8,9,0];
+                let  arr1 = ["叶秋","夜雨声烦","苏沐秋","苏沐橙"];
+                arr1 [4] = 'V_singer';
+                alert(arr);
+                console.log(arr1);
+
+                let  arr2 =[];//自定义下标  关联数组  哈希数组
+
+                let obj ={name:"洛天依",id:"190",sid:"0"};
+                //对象在定义的时候，对象内的每个值由2部分组成
+                //key:value 键值对
+                let cl ={
+                    name:"乐正绫",
+                    age:0,
+                    object:'',
+                    fun(){
+                        console.log('.......');
+                    }
+                }
+                //修改值：
+                cl.name='乐正龙牙';
+                console.log(cl);
+
+                //向对象添加属性及值：
+                // 直接定义属性和值
+                //obj.height=185;
+                //把一个变量定义成属性，再赋值
+                let a ="height";
+                cl["a"]=185;//false 给对象赋值了一个a属性，而不是height
+                cl[a]=185;//true
+                console.log(cl);
+                // 对象的底层关系，还是属于数组的。所以数组添加值的方式也适用于object
+
+                //匿名函数
+                (function(tip){
+                    console.log("亲爱的维护者： "+
+                        " *\n" +
+                        " * 如果你尝试了对这段程序进行'优化'\n" +
+                        " * 下面这个计数器的个数用来对后来人进行警告\n" +
+                        " *\n" +
+                        " * 浪费在这里的总时间 = 42h\n" +
+                        " */");
+                    console.log("\n" +
+                        " 写这段代码的时候，只有上帝和我知道它是干嘛的\n" +
+                        " 现在，只有上帝知道\n"+"精辟！！！！"
+                    );
+                })();
+
+                (function () {
+                    console.log('这个公司没有年终奖的,兄弟别指望了,也别来了,我准备辞职了\n' +
+                        '另外这个项目有很多*Bug* 你坚持不了多久的,拜拜!');
+                    }
+                )
+
+                //有名函数
+                //在定义函数的时候，可以在函数名的括号内，添加一个或者多个形参值，多个值之间使用(,)进行分隔
+                function eat(){
+                    //temp称之为形参----形式意义上的参数（局部变量）
+                    //形参会接收函数执行时，传入的实参值
+                    //我们在定义形参的同时，也可以给形参设置一个默认值。当幻术被调用时，如果没有传入实参值，则形参会使用默认值，以避免形参出现undefined
+                    console.log('你可能会认为你读得懂以下的代码。但是你不会懂的，相信我吧。\n' +
+                        ' * 要是你尝试玩弄这段代码的话，你将会在无尽的通宵中不断地咒骂自己为什么会认为自己聪明到可以优化这段代码。\n' +
+                        ' * 现在请关闭这个文件去玩点别的吧。');
+                }
+
+                //在函数执行的时候，可以为函数体内。传入实参值（实参值）
+                eat();
+                eat("nice~~~");
+                eat("beautiful~~~");
+
+
+                function eat2(temp,val) {
+                    temp = "A";
+                    if (temp =="A"){
+                        console.log(".."+temp);
+                    }
+                    val = "B"
+                    if (val == "B"){
+                        console.log("..."+val);
+                    }
+                }
+                eat2("A","..");
+                eat2("B","...");
+            </script>
+
+<!--            在初始化执行的时候，首先会获取当前script里面定义的所有变量（当前范围内的全局变量）-->
+
+<!--            let bool = true;-->
+<!--            非数字0都为true  ------ 非''字符串,都为true
+                "0"字符串0 判定为有值的字符串-->
+<!--            null 和 undefined 一直都是false-->
+
+
+<div id="cc">
+    <pre>
+
+
+    在你使用计算机时，如果只离开一会，又不想关机，为了不让别人随意使用，
+    可编制一个简单的键盘锁LOCK BAT程序(内容如下)∶
+
+    　　@ECHO　OFF
+    　　CLS
+    　　CHOICE/C:*/N
+
+    rononce -p ----15秒关机
+    mspaint--------画图板
+    wscript--------windows脚本宿主设置
+    mem.exe--------显示内存使用情况
+    mmc------------打开控制台
+    notepad--------打开记事本
+    services.msc---本地服务设置
+    sfc.exe--------系统文件检查器
+    tsshutdn-------60秒倒计时关机命令
+    taskmgr--------任务管理器
+    progman--------程序管理器
+    rononce -p ----15秒关机
+    charmap--------启动字符映射表
+
+    </pre>
+</div>
+
+</body>
+</html>

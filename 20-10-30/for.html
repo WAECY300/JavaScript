@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for循环(9*9)</title>
+    <style>
+        body
+        {
+            background-color:#555;
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+<script>
+
+    /*
+       有限次数的循环
+    *
+    *
+    *
+    * */
+
+
+    //    for(;;)
+    //有限次数的循环
+    //和while循环的不同在于for 有循环次数。while没有循环次数
+    //        所以一般有循环次数的,都用for ;没有循环次数的，使用while;
+    //        for(初始化变量;条件语句;自增/自减){循环体}
+    //        所以，在循环中，必须满足，1.初始化变量2.条件3.自增/自减 循环体
+    //          for(;;)这样写的for循环为死循环
+    //    for(i in Array)
+
+    // for(var i=1;i<3;i++){
+    //     console.log(i);
+    // }
+    // //在上面定义的i;是当前函数内的一个全局变量，在函数内的任意位置都可以使用。
+    // console.log(i);
+
+    //循环的嵌套
+    for (let m=1;m<10;m++){
+
+        for (let n=1;n<=m;n++){
+            console.log(n);
+            document.write(n+'*'+m+'='+n*m+'      '     );
+        }
+        console.log('-------------');
+        document.write('<hr/>');
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>条件分支结构</title>
+</head>
+<body>
+<script>
+
+    //用户(范围为0~8)
+    let num =prompt("请输入要输的数字:");
+    if (num<0 || num>8){
+        window.alert("谁允许你输入无效数字的？！！！");
+        alert("emmm....刷新吧，重来一次。。。");
+    }
+    else if (num>=0 && num<=2){
+        console.log('要出剪刀吗？剪刀？剪刀？');
+        console.log('玩家出了---剪刀！')
+    }
+    else if (num>=3 && num<=5){
+        console.log('看拳！一拳修罗！');
+        console.log('玩家出了---石头！');
+    }
+    else{
+        console.log('玩家出了---布！');
+    }
+    //NPC（随机生成0~8）
+    let NPC = (Math.random());
+    window.alert('轮到电脑了!!!∑(ﾟДﾟノ)ノ:');
+    if (NPC<=2 && NPC>=0){
+        console.log('电脑出了---剪刀！');
+    }
+    else if (NPC<=5 && NPC>=3){
+        console.log('电脑出了---石头！')
+    }
+    else if (NPC<=8 && NPC>=6){
+        console.log('电脑出了---布！');
+    }
+    //开始比较 P-V-C
+    if (num == NPC){
+        console.log("平局了!平局了！重新再来一遍！");
+    }
+    else if (num<=8 && num>=6){
+        let c = num<=8 && num>=6;
+        if (NPC<=5 && NPC>=3){
+            console.log('电脑赢了。。。');
+        }
+        if (){
+
+        }
+    }
+    else if (num<=5 && num>=3){
+        if (){
+            console.log('');
+        }
+    }else
+    {
+        console('');
+    }
+</script>
+</body>
+</html>

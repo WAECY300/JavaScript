@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>转义html标签</title>
+</head>
+<body>
+            <script>
+                function HtmlEncode(text){
+                    return text.replace(/&/g,'&amp').replace(/\"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+                }
+            </script>
+</body>
+</html>

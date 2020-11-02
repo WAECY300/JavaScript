@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>。。。</title>
+    <script type="text/javascript">
+        //在js中打印数据的形式有哪几种？
+        //1.控制台----> 打开浏览器后，按键盘F12按键，会弹出一个侧边栏，这个侧边栏就是控制台查看器--（console--控制台）
+        //控制台打印输出
+        //使用console.log打印数据的时候，
+        //     1.数字格式的数据可以直接写入
+        //     2.字符串类型的数据需要使用单引号或者双引号引入输出
+        //     3.变量、布尔值、方法等可以直接写入
+        //     4.console.log中还支持数据的加减法运算/条件判断等
+        console.log('十年荣耀');//字符串类型的数据输出后一定是黑色
+        console.log(233);//数字输出后的颜色不是黑色的
+        // console.log(a);//a是没有被定义过的 -->error(报错)
+        console.log('Tea');
+
+
+        //弹出框输出   ---警告框
+        // alert(233);
+
+        // var a = 'actions';
+        // alert(a)
+
+        var obj = {name:"叶秋",
+            name2:"苏沐橙",
+            age:18,
+            sex:0}
+        // alert(obj);
+
+        // alert('(function(){return 1})()');
+        //
+        // var arr2 = eval('[2,3,4,5,76,8]');
+        // var fun = eval('function(){return 1}')
+        // console.log(arr2);
+        // console.log(fun());
+
+        //3.prompt()  //页面中的输入框
+            var ipt = prompt('Vsinger','');
+            // console.log(ipt);
+            // alert(ipt);
+
+        // confirm() 确认框
+
+        // var a = confirm("确定要执行该操作吗？");
+        // console.log(a);
+
+        // document.write() //文档写入---向HTML页面中写入数据
+        // document.write('emmmm.....');
+
+        console.log(Date());
+    </script>
+</head>
+<style>
+    div
+    {
+        width: 200px;
+        height: 200px;
+        background-color:blue;
+    }
+    #d1
+    {
+        width:300px;
+        height:300px;
+        background-color:red;
+    }
+</style>
+<body>
+
+<div ondblclick="console.log('你双击了div标签')"></div>
+<a href="javascript:'a';">JS</a>
+<a hef="#">跳转</a>
+<!--<a href="javascript:void(1);">点击</a>-->
+<label>
+    <input type="text"
+    onblur="console.log('....')">
+</label>
+
+    <div id="d1">
+    </div>
+
+<p class="p1">显示叶秋测试结果：请开始你的表演：</p>
+<button onclick="test()">点击这里</button>
+</body>
+</html>
+
+<script>
+
+    document.write(Date());
+    document.getElementById().innerHTML='段落已修改';
+    document.getElementById('').innerHTML='已修改内容';
+    document.getElementById().innerHtml='修改内容';
+    document.getElementById().innerHTML='跌得壮壮';
+    document.getElementById().innerHTML='emmm';
+    document.getElementById('d1').innerHTML='感觉有点悬。。。';
+    // alert(16+'red');
+
+    function test(){
+        var name='叶秋';
+        var team='原嘉世，现兴欣！';
+        let age = 20;
+        let sex = 0;
+        var demo=document.getElementById('p1');
+        demo.innerHTML="age="+age;
+        // demo.innerHTML='来了来了，那个男人回来了！那个称霸全荣耀的男人！他就是:name='+name;
+    }
+
+</script>
+

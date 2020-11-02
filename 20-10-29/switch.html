@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>switch...case循环</title>
+</head>
+<body>
+<!--<script>-->
+<!--    //switch也是条件分支的一种,在switch的括号内，传入一个变量，该变量的值，用于和case作比较。当switch的值和case的值完全相等时，执行当前case后的代码-->
+<!--    //在JS中，switch.case分支结构中，如果不使用break打断进行停止的话，在条件成立的情况下，会向下持续输出-->
+<!--    //如下：-->
+
+<!--    let temp = Number(prompt('请输入1~12月:'));-->
+<!--    switch (temp) {-->
+<!--        case 1:console.log('1月份');-->
+<!--        case 2:console.log('2月份');-->
+<!--        case 3:console.log('3月份');-->
+<!--        case 4:console.log('4月份');-->
+<!--        case 5:console.log('5月份');-->
+<!--        case 6:console.log('6月份');-->
+<!--        break;-->
+<!--        case 7:console.log('7月份');break;-->
+<!--        case 8:console.log('8月份');break;-->
+<!--        case 9:console.log('9月份');break;-->
+<!--        break;//停止输出-->
+<!--        case 10:-->
+<!--            console.log('10月份');-->
+<!--        case 11:-->
+<!--            console.log('11月份');-->
+<!--        case 12:-->
+<!--            console.log('12月份');-->
+<!--        // default:-->
+<!--        //     console.log(temp+'月份');-->
+<!--    }-->
+<!--    function fun(year,month,date){-->
+<!--        let day = date*1;-->
+<!--        let temp = null;-->
+<!--        switch(month*1) {-->
+<!--            case 12:-->
+<!--                day+=30;-->
+<!--            case 11:-->
+<!--                day+=31;-->
+<!--            case 10:-->
+<!--                day+=30-->
+<!--            case 9:-->
+<!--                day+=31;-->
+<!--            case 8:-->
+<!--                day+=31;-->
+<!--            case 7:-->
+<!--                day+=30;-->
+<!--            case 6:-->
+<!--                day+=31;-->
+<!--            case 5:-->
+<!--                day+=30;-->
+<!--            case 4:-->
+<!--                day+=31;-->
+<!--            case 3:-->
+<!--                day += 29;-->
+<!--            case 2:-->
+<!--                day += 31;-->
+<!--            default:-->
+<!--                console.log(day);-->
+<!--        }-->
+<!--    }-->
+<!--    </script>-->
+
+<script>
+
+    //------------------------------------------------
+    //三元运算符
+    let a =parseInt(Math.random()* 10);
+    console.log(a);
+    let b = a>=5 ? '叶秋':'声烦';
+    console.log(b);
+
+    let c = b == '叶秋' ? fun('兴欣',b) :fun('蓝雨',b);
+
+    console.log(c);
+    function fun(temp,user){
+        if(temp== '兴欣'){
+            console.log('荣耀顶级大神:');
+        }else{
+            console.log('夜雨神烦');
+        }
+        return temp+user;//return终止并返回结果。当前范围内的代码会停止向下执行
+        console.log('无法输出.....')
+    }
+</script>
+
+</body>
+</html>

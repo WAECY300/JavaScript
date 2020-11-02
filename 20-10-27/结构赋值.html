@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>解构运算</title>
+</head>
+<body>
+<!--<script>-->
+
+<!--    let a =10;-->
+<!--    let b =20;-->
+<!--    let [c,d] = [10,20];-->
+<!--    console.log(c,d,a,b);-->
+<!--    let [e,f] = [4,6];-->
+<!--    console.log(e,f);-->
+
+<!--    let arr = [1,2,3,4,5,6,7,8];-->
+<!--    let[o,...l] = arr;-->
+<!--    console.log(o,l);-->
+
+<!--    // let [q,w,[y,...i],...m] = arr;-->
+<!--    // console.log(q,w,y,i,m);-->
+
+<!--    let [z,j=233] =[20];-->
+<!--    console.log(z,j);-->
+
+
+<!--        let [a1,b1 = j] =[5];-->
+<!--        console.log(a1,b1);-->
+
+<!--</script>-->
+<script>
+    let a ={
+        name:"test",
+        age:0,
+        sid:0,
+        id:233,
+    };
+    let n ={
+        name:"君莫笑",
+        team:"兴欣战队",
+        age:0.1,
+        sid:0.4,
+        id:161
+    }
+    document.write("该数据为:"+a.age+"<br/>");
+    document.write(a.name);
+    document.write("数据编号为:"+n.id+"<br/>");
+    document.write('荣耀之神:'+n.name+"<br/>");
+    document.write("十区噩梦:"+n['name']+"隶属于:"+n["team"]+'<br/>');
+
+</script>
+</body>
+</html>

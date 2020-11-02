@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>域名主机</title>
+</head>
+<body>
+        //获取域名主机
+        <script>
+            function getHost(url){
+                var host = 'null';
+                if(typeof url=="undefined" || null==url){
+                    url=window.location.href;
+                }
+                var regex = /^\w+\:\/\/([^\/]*).*/;
+                var match = url.match(regex);
+                if(typeof match!="undefined" && null!=match){
+                    host = match[1];
+                }
+                return host;
+            }
+        </script>
+
+</body>
+</html>
